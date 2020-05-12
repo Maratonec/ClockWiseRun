@@ -6,12 +6,15 @@ var MAX_SPEED = 200
 const ACCELERATION = 50
 const JUMP_HEIGHT = -250
 var motion = Vector2()
+var NEXT = false
+export(String, FILE, "*.tscn") var level
 onready var fps = get_node('../fps_label')
 func _ready():
 	get_node("OnScreen").connect("screen_exited", self, "_on_screen_exited") 
 func _on_screen_exited():
 	#die screen
-	get_tree().reload_current_scene()	
+	if(NEXT == false):
+		get_tree().reload_current_scene()	
 func _physics_process(delta):
 	motion.y += GRAVITY
 	var friction = false
@@ -49,7 +52,9 @@ func _physics_process(delta):
  
 
 
-func _on_player_entered(body):
+func _on_Clock_body_entered(body):
 	#change level
-	get_tree().change_scene("res://Levels/two.tscn")	
+	NEXT = true
+	get_tree().change_scene(level)	
 	pass
+

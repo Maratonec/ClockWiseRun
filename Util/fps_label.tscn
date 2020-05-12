@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="fps_label" type="Label"]
+anchor_left = 0.25
+anchor_top = 0.219
+anchor_right = 1.316
+anchor_bottom = 0.674
+margin_left = 739.0
+margin_top = -119.086
+margin_right = -344.696
+margin_bottom = -367.356
+custom_colors/font_color = Color( 0.85098, 0.768627, 0.0509804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
