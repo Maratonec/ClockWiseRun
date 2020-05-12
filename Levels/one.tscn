@@ -1,0 +1,213 @@
+[gd_scene load_steps=46 format=2]
+
+[ext_resource path="res://Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Virtual Guy/Run (32x32).png" type="Texture" id=2]
+[ext_resource path="res://TileSet/test.tres" type="TileSet" id=3]
+[ext_resource path="res://Assets/Virtual Guy/Fall (32x32).png" type="Texture" id=4]
+[ext_resource path="res://Assets/Clock/6.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Clock/11.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Clock/3.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Virtual Guy/Idle (32x32).png" type="Texture" id=8]
+[ext_resource path="res://Assets/Virtual Guy/Jump (32x32).png" type="Texture" id=9]
+[ext_resource path="res://Assets/Clock/1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Clock/4.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Clock/2.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Clock/5.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Clock/7.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Clock/8.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Clock/9.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Clock/10.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Clock/12.png" type="Texture" id=18]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 8 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 8 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 8 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 8 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 8 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 8 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 8 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 8 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 8 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 8 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 2 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 2 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 2 )
+region = Rect2( 352, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 12.0
+}, {
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ) ],
+"loop": true,
+"name": "Run",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 5.0
+} ]
+
+[sub_resource type="ConvexPolygonShape2D" id=25]
+points = PoolVector2Array( 8, 8, 8, 58, 32, 70, 54, 58, 54, 8 )
+
+[sub_resource type="SpriteFrames" id=26]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 12 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 6 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 9.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 16, 16 )
+
+[node name="World" type="Node"]
+
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 103.202, 508.898 )
+scale = Vector2( -0.5, 0.5 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="Player"]
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 24 )
+animation = "Fall"
+playing = true
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( -36, -32 )
+shape = SubResource( 25 )
+
+[node name="OnScreen" type="VisibilityNotifier2D" parent="Player"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 2, 2 )
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 17, 3, 0, 18, 4, 0, 19, 5, 0, 65553, 3, 0, 65554, 4, 0, 65555, 5, 0, 131089, 6, 0, 131090, 7, 0, 131091, 8, 0, 196625, 13, 0, 196626, 14, 0, 262161, 12, 0, 262162, 15, 0, 393215, 4, 0, 327697, 12, 0, 327698, 15, 0, 327713, 4, 0, 458751, 4, 0, 393230, 33, 0, 393233, 9, 0, 393234, 11, 0, 393249, 4, 0, 524287, 4, 0, 458766, 33, 0, 458773, 31, 0, 458785, 4, 0, 589823, 4, 0, 524292, 32, 0, 524299, 31, 0, 524300, 31, 0, 524302, 33, 0, 524309, 31, 0, 524312, 31, 0, 524321, 4, 0, 589824, 1, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 1, 0, 589829, 1, 0, 589830, 1, 0, 589831, 2, 0, 589834, 0, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0, 589838, 1, 0, 589839, 1, 0, 589840, 2, 0, 589843, 0, 0, 589844, 1, 0, 589845, 1, 0, 589846, 1, 0, 589847, 1, 0, 589848, 1, 0, 589849, 1, 0, 589850, 1, 0, 589851, 2, 0, 589857, 4, 0, 655360, 7, 0, 655361, 7, 0, 655362, 7, 0, 655363, 7, 0, 655364, 7, 0, 655365, 7, 0, 655366, 7, 0, 655367, 8, 0, 655370, 3, 0, 655371, 4, 0, 655372, 4, 0, 655373, 4, 0, 655374, 4, 0, 655375, 4, 0, 655376, 4, 0, 655377, 1, 0, 655378, 1, 0, 655379, 7, 0, 655380, 7, 0, 655381, 7, 0, 655382, 7, 0, 655383, 7, 0, 655384, 7, 0, 655385, 7, 0, 655386, 7, 0, 655387, 8, 0, 655388, 29, 0, 655389, 28, 0, 655393, 4, 0, 786431, 4, 0, 720898, 13, 0, 720900, 14, 0, 720906, 6, 0, 720907, 7, 0, 720908, 7, 0, 720909, 7, 0, 720910, 7, 0, 720911, 7, 0, 720912, 7, 0, 720913, 4, 0, 720914, 5, 0, 720921, 13, 0, 720922, 14, 0, 720927, 0, 0, 720928, 1, 0, 851967, 4, 0, 786434, 12, 0, 786436, 15, 0, 786449, 3, 0, 786450, 5, 0, 786457, 12, 0, 786458, 15, 0, 786460, 34, 0, 786461, 35, 0, 786462, 35, 0, 786463, 3, 0, 786464, 4, 0, 917503, 4, 0, 851970, 12, 0, 851972, 15, 0, 851985, 3, 0, 851986, 5, 0, 851993, 9, 0, 851994, 11, 0, 851999, 3, 0, 852000, 4, 0, 983039, 4, 0, 917506, 12, 0, 917508, 15, 0, 917518, 32, 0, 917521, 6, 0, 917522, 8, 0, 917523, 36, 0, 917526, 0, 0, 917527, 2, 0, 917535, 3, 0, 917536, 4, 0, 1048575, 4, 0, 983042, 12, 0, 983044, 15, 0, 983052, 0, 0, 983053, 1, 0, 983054, 2, 0, 983061, 30, 0, 983062, 3, 0, 983063, 5, 0, 983071, 3, 0, 983072, 4, 0, 1114111, 4, 0, 1048578, 9, 0, 1048579, 10, 0, 1048580, 11, 0, 1048583, 17, 0, 1048586, 36, 0, 1048587, 37, 0, 1048588, 3, 0, 1048589, 4, 0, 1048590, 5, 0, 1048595, 16, 0, 1048598, 3, 0, 1048599, 5, 0, 1048607, 3, 0, 1048608, 4, 0, 1179647, 4, 0, 1114119, 18, 0, 1114124, 3, 0, 1114125, 4, 0, 1114126, 5, 0, 1114129, 16, 0, 1114131, 31, 0, 1114132, 33, 0, 1114133, 33, 0, 1114134, 3, 0, 1114135, 5, 0, 1114143, 3, 0, 1114144, 4, 0, 1245183, 4, 0, 1179655, 18, 0, 1179660, 3, 0, 1179661, 4, 0, 1179662, 5, 0, 1179663, 20, 0, 1179664, 20, 0, 1179665, 20, 0, 1179666, 20, 0, 1179667, 20, 0, 1179668, 20, 0, 1179669, 20, 0, 1179670, 3, 0, 1179671, 5, 0, 1179679, 3, 0, 1179680, 4, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="fps_label" type="Label" parent="."]
+anchor_left = 0.25
+anchor_top = 0.219
+anchor_right = 1.316
+anchor_bottom = 0.674
+margin_left = 739.0
+margin_top = -119.086
+margin_right = -344.696
+margin_bottom = -367.356
+custom_colors/font_color = Color( 0.85098, 0.768627, 0.0509804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 57.1988, 206.266 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+position = Vector2( 49.5275, 266.486 )
+frames = SubResource( 26 )
+frame = 10
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 48.9473, 266.395 )
+shape = SubResource( 27 )
+[connection signal="body_entered" from="Area2D" to="Player" method="_on_player_entered"]
