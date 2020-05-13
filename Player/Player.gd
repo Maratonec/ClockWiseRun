@@ -30,8 +30,11 @@ func _physics_process(delta):
 	else:
 		$Sprite.play("Idle")
 		friction = true
+	if Input.is_action_pressed("R"):
+		get_tree().reload_current_scene()
 		
-	if is_on_floor():
+	if is_on_floor():	
+
 		if Input.is_action_just_pressed("jump") && Input.is_action_pressed("shift"):
 			motion.y = (JUMP_HEIGHT - 100)
 		elif Input.is_action_just_pressed("jump"):
