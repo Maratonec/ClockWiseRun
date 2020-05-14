@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://Util/fps_label.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Virtual Guy/Fall (32x32).png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://Assets/Clock/10.png" type="Texture" id=17]
 [ext_resource path="res://Assets/Clock/12.png" type="Texture" id=18]
 [ext_resource path="res://Assets/Virtual Guy/Jump (32x32).png" type="Texture" id=19]
+[ext_resource path="res://Util/Rope/Chain.tscn" type="PackedScene" id=20]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -125,11 +126,6 @@ region = Rect2( 320, 0, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=26]
 animations = [ {
-"frames": [ ExtResource( 19 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 12.0
-}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
 "loop": true,
 "name": "Run",
@@ -144,6 +140,11 @@ animations = [ {
 "loop": true,
 "name": "Fall",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 12.0
 } ]
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
@@ -198,4 +199,8 @@ position = Vector2( -36, -32 )
 shape = SubResource( 27 )
 
 [node name="OnScreen" type="VisibilityNotifier2D" parent="Player"]
+
+[node name="Chain" parent="." instance=ExtResource( 20 )]
+position = Vector2( 106, 360 )
+loops = 30
 [connection signal="body_entered" from="Clock" to="Player" method="_on_Clock_body_entered"]

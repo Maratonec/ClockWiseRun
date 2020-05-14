@@ -5,14 +5,20 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8, 8 )
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 8, 4 )
-
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 8, 4 )
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 8, 4 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 8, 4 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 0, 0 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 0, 0 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 0, 0 )
@@ -21,15 +27,9 @@ extents = Vector2( 0, 0 )
 extents = Vector2( 0, 0 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 0, 0 )
-
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 0, 0 )
-
-[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 8, 4 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 8, 4 )
 
 [sub_resource type="RectangleShape2D" id=11]
@@ -215,7 +215,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="9/StaticBody2D"]
 position = Vector2( 0, 4 )
-shape = SubResource( 6 )
+shape = SubResource( 2 )
 
 [node name="10" type="Sprite" parent="."]
 position = Vector2( 80, 0 )
@@ -230,7 +230,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="10/StaticBody2D"]
 position = Vector2( 0, 4 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="11" type="Sprite" parent="."]
 position = Vector2( 96, 0 )
@@ -245,7 +245,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="11/StaticBody2D"]
 position = Vector2( 0, 4 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="12" type="Sprite" parent="."]
 position = Vector2( 64, 16 )
@@ -259,7 +259,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="12"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="12/StaticBody2D"]
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 disabled = true
 
 [node name="13" type="Sprite" parent="."]
@@ -275,7 +275,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="13/StaticBody2D"]
 visible = false
-shape = SubResource( 8 )
+shape = SubResource( 6 )
 disabled = true
 
 [node name="14" type="Sprite" parent="."]
@@ -290,7 +290,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="14"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="14/StaticBody2D"]
-shape = SubResource( 9 )
+shape = SubResource( 7 )
 disabled = true
 
 [node name="15" type="Sprite" parent="."]
@@ -305,7 +305,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="15"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="15/StaticBody2D"]
-shape = SubResource( 10 )
+shape = SubResource( 8 )
 disabled = true
 one_way_collision_margin = 0.0
 
@@ -322,7 +322,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="16/StaticBody2D"]
 position = Vector2( 0, 4 )
-shape = SubResource( 4 )
+shape = SubResource( 9 )
 
 [node name="17" type="Sprite" parent="."]
 position = Vector2( 160, 16 )
@@ -337,7 +337,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="17/StaticBody2D"]
 position = Vector2( 0, 4 )
-shape = SubResource( 5 )
+shape = SubResource( 10 )
 
 [node name="18" type="Sprite" parent="."]
 position = Vector2( 160, 32 )
