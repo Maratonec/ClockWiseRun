@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GUI/Button.gd" type="Script" id=1]
+[ext_resource path="res://Assets/GUI/play.png" type="Texture" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="Button" type="Button" parent="."]
+margin_left = 445.902
+margin_top = 243.851
+margin_right = 969.902
+margin_bottom = 761.851
+rect_scale = Vector2( 0.25, 0.25 )
+icon = ExtResource( 2 )
+flat = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

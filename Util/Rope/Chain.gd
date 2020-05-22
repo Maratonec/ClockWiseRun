@@ -2,8 +2,6 @@ extends Node2D
 const LOOP = preload("res://Util/Rope/rope.tscn")
 const LINK = preload("res://Util/Rope/Link.tscn")
 const PLATFORM1 = preload("res://Util/Rope/platform.tscn")
-const PLATFORM2 = preload("res://Util/Rope/Platform2.tscn")
-const PLATFORM3 = preload("res://Util/Rope/Platform3.tscn")
 const TOP = preload("res://Util/Rope/top.tscn")
 export (int) var loops
 
@@ -16,16 +14,14 @@ func _ready():
 		Child = addLoop(Parent, 2, LOOP, 0)
 		addLink(Parent, Child)
 		Parent = Child
-	Child = addLoop(Parent, 2, PLATFORM1, 0)
+	Child = addLoop(Parent, 8, PLATFORM1, 20)
 	addLink(Parent, Child)
 	Parent = Child
-	Child = addLoop(Parent, 0, PLATFORM2, 16)
-	addLink(Parent, Child)
+	Child = addLoop(Parent, -8, LOOP,  20)
+	addLink(Child, Parent)
 	Parent = Child
-	Child = addLoop(Parent, 0, PLATFORM3, 16)
-	addLink(Parent, Child)
-	Parent = Child
-	for i in range (loops):
+	
+	for v in range (loops):
 		Child = addLoop(Parent, -2, LOOP, 0)
 		addLink(Parent, Child)
 		Parent = Child
@@ -35,8 +31,8 @@ func _ready():
 func addLoop(parent, space, type, position):
 	var loop = type.instance()
 	loop.position = parent.position
-	loop.position.y += space
-	loop.position.x += position
+	loop.position.y = loop.position.y + space
+	loop.position.x = loop.position.x + position
 	add_child(loop)
 	return loop
 func addLink(parent, child):

@@ -1,7 +1,7 @@
 [gd_scene format=2]
 
 [node name="PinJoint2D" type="PinJoint2D"]
-bias = 0.026
+bias = 0.052
 
 [node name="Sprite" type="Sprite" parent="."]
 z_index = 1
