@@ -18,11 +18,20 @@ _global_script_class_icons={
 config/name="ClockWiseRun"
 config/description="CloackWiseRun is brand new platformer game with unlimited possibilities and great story"
 run/main_scene="res://GUI/Home.tscn"
+config/use_custom_user_dir=true
 config/custom_user_dir_name="CloakWiseRun"
+
+[autoload]
+
+Data="*res://Util/Data.gd"
 
 [compression]
 
 formats/zstd/compression_level=10
+
+[debug]
+
+settings/crash_handler/message="Looks like game crush."
 
 [display]
 

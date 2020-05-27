@@ -58,6 +58,8 @@ func _physics_process(delta):
 func _on_Clock_body_entered(body):
 	#change level
 	NEXT = true
+	var data = get_node("/root/Data")
+	data.level += 1
 	get_tree().change_scene(level)	
 	pass
 
