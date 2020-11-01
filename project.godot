@@ -31,7 +31,7 @@ formats/zstd/compression_level=10
 
 [debug]
 
-settings/crash_handler/message="Looks like game crush."
+settings/crash_handler/message="Looks like the game crashed"
 
 [display]
 
@@ -86,3 +86,4 @@ R={
 
 quality/driver/driver_name="GLES2"
 threads/thread_model=2
+environment/default_clear_color=Color( 0.368627, 0.368627, 0.368627, 1 )

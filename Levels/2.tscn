@@ -1,13 +1,10 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://TileSet/test.tres" type="TileSet" id=1]
 [ext_resource path="res://Assets/Clock/clock.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Virtual Guy/Fall (32x32).png" type="Texture" id=3]
+[ext_resource path="res://Assets/melly/Melly.png" type="Texture" id=3]
 [ext_resource path="res://Util/fps_label.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Player/Player.gd" type="Script" id=16]
-[ext_resource path="res://Assets/Virtual Guy/Run (32x32).png" type="Texture" id=17]
-[ext_resource path="res://Assets/Virtual Guy/Idle (32x32).png" type="Texture" id=18]
-[ext_resource path="res://Assets/Virtual Guy/Jump (32x32).png" type="Texture" id=19]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -69,122 +66,62 @@ animations = [ {
 extents = Vector2( 16, 16 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 17 )
-region = Rect2( 0, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 17 )
-region = Rect2( 32, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 16, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 17 )
-region = Rect2( 64, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 32, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 17 )
-region = Rect2( 96, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 48, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 17 )
-region = Rect2( 128, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 80, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 17 )
-region = Rect2( 160, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 17 )
-region = Rect2( 192, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 64, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 17 )
-region = Rect2( 224, 0, 32, 32 )
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 16, 16 )
 
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 17 )
-region = Rect2( 256, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=24]
-atlas = ExtResource( 17 )
-region = Rect2( 288, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=25]
-atlas = ExtResource( 17 )
-region = Rect2( 320, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=26]
-atlas = ExtResource( 17 )
-region = Rect2( 352, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=27]
-atlas = ExtResource( 18 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 18 )
-region = Rect2( 32, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 18 )
-region = Rect2( 64, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 18 )
-region = Rect2( 96, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 18 )
-region = Rect2( 128, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=32]
-atlas = ExtResource( 18 )
-region = Rect2( 160, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=33]
-atlas = ExtResource( 18 )
-region = Rect2( 192, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=34]
-atlas = ExtResource( 18 )
-region = Rect2( 224, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=35]
-atlas = ExtResource( 18 )
-region = Rect2( 256, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=36]
-atlas = ExtResource( 18 )
-region = Rect2( 288, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=37]
-atlas = ExtResource( 18 )
-region = Rect2( 320, 0, 32, 32 )
-
-[sub_resource type="SpriteFrames" id=38]
+[sub_resource type="SpriteFrames" id=23]
 animations = [ {
-"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+"frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
 "loop": true,
 "name": "Run",
-"speed": 12.0
+"speed": 15.0
 }, {
-"frames": [ ExtResource( 19 ) ],
-"loop": true,
-"name": "Jump",
-"speed": 12.0
-}, {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
-"loop": true,
-"name": "Idle",
-"speed": 12.0
-}, {
-"frames": [ ExtResource( 3 ) ],
+"frames": [ SubResource( 19 ) ],
 "loop": true,
 "name": "Fall",
 "speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 3.0
+}, {
+"frames": [ SubResource( 22 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 12.0
 } ]
 
-[sub_resource type="ConvexPolygonShape2D" id=39]
-points = PoolVector2Array( 8, 8, 8, 58, 32, 70, 54, 58, 54, 8 )
+[sub_resource type="ConvexPolygonShape2D" id=24]
+points = PoolVector2Array( 8, 20, 8, 48, 32, 60, 54, 48, 54, 20 )
 
 [node name="World2" type="Node"]
 
@@ -193,7 +130,7 @@ scale = Vector2( 2, 2 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 5, 3, 0, 6, 5, 0, 14, 3, 0, 15, 4, 0, 16, 4, 0, 17, 4, 0, 18, 4, 0, 19, 4, 0, 20, 4, 0, 21, 4, 0, 22, 5, 0, 65541, 3, 0, 65542, 5, 0, 65550, 3, 0, 65551, 4, 0, 65552, 4, 0, 65553, 4, 0, 65554, 4, 0, 65555, 4, 0, 65556, 4, 0, 65557, 4, 0, 65558, 5, 0, 131077, 3, 0, 131078, 5, 0, 131086, 3, 0, 131087, 4, 0, 131088, 4, 0, 131089, 4, 0, 131090, 4, 0, 131091, 4, 0, 131092, 4, 0, 131093, 4, 0, 131094, 5, 0, 262143, 4, 0, 196608, 34, 0, 196609, 35, 0, 196613, 3, 0, 196614, 5, 0, 196622, 3, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 196628, 4, 0, 196629, 4, 0, 196630, 5, 0, 196641, 4, 0, 327679, 4, 0, 262148, 37, 0, 262149, 6, 0, 262150, 8, 0, 262158, 6, 0, 262159, 7, 0, 262160, 7, 0, 262161, 7, 0, 262162, 7, 0, 262163, 7, 0, 262164, 7, 0, 262165, 7, 0, 262166, 8, 0, 262177, 4, 0, 393215, 4, 0, 327713, 4, 0, 458751, 4, 0, 393219, 31, 0, 393225, 33, 0, 393249, 4, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458761, 33, 0, 458764, 31, 0, 458768, 32, 0, 458776, 0, 0, 458777, 1, 0, 458778, 1, 0, 458779, 1, 0, 458780, 1, 0, 458781, 1, 0, 458782, 1, 0, 458783, 1, 0, 458784, 1, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 4, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 524304, 1, 0, 524305, 1, 0, 524306, 1, 0, 524307, 2, 0, 524311, 0, 0, 524312, 4, 0, 524313, 4, 0, 524314, 4, 0, 524315, 4, 0, 524316, 4, 0, 524317, 4, 0, 524318, 4, 0, 524319, 4, 0, 524320, 4, 0, 589824, 7, 0, 589825, 7, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0, 589830, 7, 0, 589831, 7, 0, 589832, 7, 0, 589833, 7, 0, 589834, 7, 0, 589835, 7, 0, 589836, 7, 0, 589837, 7, 0, 589838, 7, 0, 589839, 7, 0, 589840, 7, 0, 589841, 7, 0, 589842, 7, 0, 589843, 8, 0, 589846, 37, 0, 589847, 6, 0, 589848, 7, 0, 589849, 7, 0, 589850, 7, 0, 589851, 7, 0, 589852, 7, 0, 589853, 7, 0, 589854, 7, 0, 589855, 7, 0, 589856, 7, 0, 655377, 12, 0, 655379, 15, 0, 655380, 29, 0, 655383, 13, 0, 655385, 14, 0, 655389, 12, 0, 655390, 15, 0, 655393, 4, 0, 720913, 12, 0, 720915, 15, 0, 720917, 29, 0, 720919, 12, 0, 720921, 15, 0, 720925, 12, 0, 720926, 15, 0, 720929, 4, 0, 786449, 12, 0, 786451, 15, 0, 786455, 9, 0, 786456, 10, 0, 786457, 11, 0, 786461, 9, 0, 786462, 11, 0, 786465, 4, 0, 851985, 12, 0, 851987, 15, 0, 852001, 4, 0, 917521, 12, 0, 917523, 15, 0, 917536, 31, 0, 983057, 12, 0, 983059, 15, 0, 983070, 0, 0, 983071, 1, 0, 983072, 1, 0, 1048576, 20, 0, 1048577, 20, 0, 1048578, 20, 0, 1048579, 20, 0, 1048580, 20, 0, 1048581, 20, 0, 1048582, 20, 0, 1048583, 20, 0, 1048584, 21, 0, 1048593, 9, 0, 1048594, 10, 0, 1048595, 11, 0, 1048598, 17, 0, 1048601, 17, 0, 1048604, 31, 0, 1048606, 6, 0, 1048607, 7, 0, 1048608, 7, 0, 1114112, 23, 0, 1114113, 23, 0, 1114114, 23, 0, 1114115, 23, 0, 1114116, 23, 0, 1114117, 23, 0, 1114118, 23, 0, 1114119, 23, 0, 1114120, 24, 0, 1114121, 34, 0, 1114122, 35, 0, 1114126, 17, 0, 1114134, 18, 0, 1114137, 18, 0, 1114140, 33, 0, 1179648, 23, 0, 1179649, 23, 0, 1179650, 23, 0, 1179651, 23, 0, 1179652, 23, 0, 1179653, 23, 0, 1179654, 23, 0, 1179655, 23, 0, 1179656, 24, 0, 1179662, 18, 0, 1179670, 18, 0, 1179676, 32, 0 )
+tile_data = PoolIntArray( 5, 3, 0, 6, 5, 0, 14, 3, 0, 15, 4, 0, 16, 4, 0, 17, 4, 0, 18, 4, 0, 19, 4, 0, 20, 4, 0, 21, 4, 0, 22, 5, 0, 65541, 3, 0, 65542, 5, 0, 65550, 3, 0, 65551, 4, 0, 65552, 4, 0, 65553, 4, 0, 65554, 4, 0, 65555, 4, 0, 65556, 4, 0, 65557, 4, 0, 65558, 5, 0, 131077, 3, 0, 131078, 5, 0, 131086, 3, 0, 131087, 4, 0, 131088, 4, 0, 131089, 4, 0, 131090, 4, 0, 131091, 4, 0, 131092, 4, 0, 131093, 4, 0, 131094, 5, 0, 262143, 4, 0, 196608, 34, 0, 196609, 35, 0, 196613, 3, 0, 196614, 5, 0, 196622, 3, 0, 196623, 4, 0, 196624, 4, 0, 196625, 4, 0, 196626, 4, 0, 196627, 4, 0, 196628, 4, 0, 196629, 4, 0, 196630, 5, 0, 196641, 4, 0, 327679, 4, 0, 262148, 37, 0, 262149, 6, 0, 262150, 8, 0, 262158, 6, 0, 262159, 7, 0, 262160, 7, 0, 262161, 7, 0, 262162, 7, 0, 262163, 7, 0, 262164, 7, 0, 262165, 7, 0, 262166, 8, 0, 262177, 4, 0, 393215, 4, 0, 327713, 4, 0, 458751, 4, 0, 393219, 31, 0, 393225, 33, 0, 393249, 4, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 2, 0, 458761, 33, 0, 458764, 31, 0, 458768, 32, 0, 458776, 0, 0, 458777, 1, 0, 458778, 1, 0, 458779, 1, 0, 458780, 1, 0, 458781, 1, 0, 458782, 1, 0, 458783, 1, 0, 458784, 1, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 4, 0, 524293, 4, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0, 524303, 1, 0, 524304, 1, 0, 524305, 1, 0, 524306, 1, 0, 524307, 2, 0, 524311, 0, 0, 524312, 4, 0, 524313, 4, 0, 524314, 4, 0, 524315, 4, 0, 524316, 4, 0, 524317, 4, 0, 524318, 4, 0, 524319, 4, 0, 524320, 4, 0, 589824, 7, 0, 589825, 7, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0, 589830, 7, 0, 589831, 7, 0, 589832, 7, 0, 589833, 7, 0, 589834, 7, 0, 589835, 7, 0, 589836, 7, 0, 589837, 7, 0, 589838, 7, 0, 589839, 7, 0, 589840, 7, 0, 589841, 7, 0, 589842, 7, 0, 589843, 8, 0, 589846, 37, 0, 589847, 6, 0, 589848, 7, 0, 589849, 7, 0, 589850, 7, 0, 589851, 7, 0, 589852, 7, 0, 589853, 7, 0, 589854, 7, 0, 589855, 7, 0, 589856, 7, 0, 655377, 12, 0, 655379, 15, 0, 655380, 29, 0, 655383, 13, 0, 655385, 14, 0, 655389, 12, 0, 655390, 15, 0, 655393, 4, 0, 720913, 12, 0, 720915, 15, 0, 720917, 29, 0, 720919, 12, 0, 720921, 15, 0, 720925, 12, 0, 720926, 15, 0, 720929, 4, 0, 786449, 12, 0, 786451, 15, 0, 786455, 9, 0, 786456, 10, 0, 786457, 11, 0, 786461, 9, 0, 786462, 11, 0, 786465, 4, 0, 851985, 12, 0, 851987, 15, 0, 852001, 4, 0, 917521, 12, 0, 917523, 15, 0, 917536, 31, 0, 983057, 12, 0, 983059, 15, 0, 983070, 0, 0, 983071, 1, 0, 983072, 1, 0, 1048576, 20, 0, 1048577, 20, 0, 1048578, 20, 0, 1048579, 20, 0, 1048580, 20, 0, 1048581, 20, 0, 1048582, 20, 0, 1048583, 20, 0, 1048584, 21, 0, 1048593, 9, 0, 1048594, 10, 0, 1048595, 11, 0, 1048598, 17, 0, 1048601, 17, 0, 1048604, 31, 0, 1048606, 6, 0, 1048607, 7, 0, 1048608, 7, 0, 1114112, 23, 0, 1114113, 23, 0, 1114114, 23, 0, 1114115, 23, 0, 1114116, 23, 0, 1114117, 23, 0, 1114118, 23, 0, 1114119, 23, 0, 1114120, 24, 0, 1114121, 34, 0, 1114122, 35, 0, 1114126, 17, 0, 1114134, 18, 0, 1114137, 18, 0, 1114140, 33, 0, 1179648, 23, 0, 1179649, 23, 0, 1179650, 23, 0, 1179651, 23, 0, 1179652, 23, 0, 1179653, 23, 0, 1179654, 23, 0, 1179655, 23, 0, 1179656, 24, 0, 1179662, 18, 0, 1179670, 18, 0, 1179673, 18, 0, 1179676, 32, 0 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -207,7 +144,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Clock"]
 scale = Vector2( 2, 2 )
 frames = SubResource( 13 )
-frame = 1
+frame = 10
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clock"]
@@ -216,7 +153,7 @@ shape = SubResource( 14 )
 [node name="fps_label" parent="." instance=ExtResource( 4 )]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 40.0845, 469.322 )
+position = Vector2( 57.4492, 486.735 )
 scale = Vector2( -0.5, 0.5 )
 script = ExtResource( 16 )
 __meta__ = {
@@ -225,15 +162,16 @@ __meta__ = {
 level = "res://Levels/3.tscn"
 
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
-scale = Vector2( 2.5, 2.5 )
-frames = SubResource( 38 )
+position = Vector2( -3, 0 )
+scale = Vector2( 3.5, 3.5 )
+frames = SubResource( 23 )
 animation = "Fall"
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( -36, -32 )
-shape = SubResource( 39 )
+shape = SubResource( 24 )
 
 [node name="OnScreen" type="VisibilityNotifier2D" parent="Player"]
 [connection signal="body_entered" from="Clock" to="Player" method="_on_Clock_body_entered"]

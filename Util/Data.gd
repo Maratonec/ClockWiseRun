@@ -2,7 +2,7 @@ extends Node
 
 
 # Declare member variables here. Examples:
-var level = 1
+var level = 0
 var save_data = {"level_save":0}
 var saveLevel = File.new()
 var save_path = "user://level.save"

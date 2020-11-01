@@ -60,6 +60,8 @@ func _on_Clock_body_entered(body):
 	NEXT = true
 	var data = get_node("/root/Data")
 	data.level += 1
+	if(data.level > 6):
+		data.level = 1
 	get_tree().change_scene(level)	
 	pass
 
