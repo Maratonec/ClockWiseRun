@@ -1,10 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://GUI/Button.gd" type="Script" id=1]
 [ext_resource path="res://Assets/GUI/play.png" type="Texture" id=2]
 [ext_resource path="res://Util/Data.gd" type="Script" id=3]
 [ext_resource path="res://Assets/GUI/license.png" type="Texture" id=4]
 [ext_resource path="res://Assets/GUI/credits.png" type="Texture" id=5]
+[ext_resource path="res://GUI/Button3.gd" type="Script" id=6]
+[ext_resource path="res://Assets/GUI/fulllicense.png" type="Texture" id=7]
+[ext_resource path="res://GUI/quit.gd" type="Script" id=8]
+[ext_resource path="res://Assets/GUI/quit.png" type="Texture" id=9]
+[ext_resource path="res://GUI/Button2.gd" type="Script" id=10]
+[ext_resource path="res://Assets/GUI/gameby.png" type="Texture" id=11]
+[ext_resource path="res://GUI/Button5.gd" type="Script" id=12]
+[ext_resource path="res://Assets/p.png" type="Texture" id=13]
 
 [node name="Node" type="Node"]
 script = ExtResource( 3 )
@@ -15,6 +23,8 @@ margin_top = 243.851
 margin_right = 969.902
 margin_bottom = 761.851
 rect_scale = Vector2( 0.25, 0.25 )
+focus_mode = 0
+enabled_focus_mode = 0
 icon = ExtResource( 2 )
 flat = true
 script = ExtResource( 1 )
@@ -28,20 +38,90 @@ margin_top = 435.0
 margin_right = 150.0
 margin_bottom = 569.0
 rect_scale = Vector2( 1.5, 1.5 )
+focus_mode = 0
+enabled_focus_mode = 0
 icon = ExtResource( 5 )
 flat = true
+script = ExtResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button3" type="Button" parent="."]
 margin_left = 850.0
-margin_top = 430.0
+margin_top = 435.0
 margin_right = 990.0
-margin_bottom = 564.0
+margin_bottom = 569.0
 rect_scale = Vector2( 1.5, 1.5 )
+focus_mode = 0
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
 icon = ExtResource( 4 )
 flat = true
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+position = Vector2( 525.454, 296.919 )
+scale = Vector2( 1.15549, 1.08432 )
+
+[node name="fulllicense" type="Sprite" parent="Node2D"]
+texture = ExtResource( 7 )
+
+[node name="Button" type="Button" parent="Node2D"]
+margin_left = 395.641
+margin_top = -263.289
+margin_right = 423.641
+margin_bottom = -241.289
+rect_scale = Vector2( 2, 2 )
+focus_mode = 0
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon = ExtResource( 9 )
+flat = true
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D2" type="Node2D" parent="."]
+visible = false
+position = Vector2( 525.454, 296.919 )
+scale = Vector2( 1.15549, 1.08432 )
+
+[node name="fulllicense" type="Sprite" parent="Node2D2"]
+texture = ExtResource( 11 )
+
+[node name="Button5" type="Button" parent="Node2D2"]
+margin_left = 395.641
+margin_top = -263.289
+margin_right = 423.641
+margin_bottom = -241.289
+rect_scale = Vector2( 2, 2 )
+focus_mode = 0
+shortcut_in_tooltip = false
+enabled_focus_mode = 0
+icon = ExtResource( 9 )
+flat = true
+script = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="P" type="Sprite" parent="."]
+position = Vector2( 83.7445, 66.7674 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 116.708
+margin_top = 58.7993
+margin_right = 227.708
+margin_bottom = 72.7993
+text = "To reset progress"
 __meta__ = {
 "_edit_use_anchors_": false
 }
