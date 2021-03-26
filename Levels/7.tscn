@@ -1,58 +1,57 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=30 format=2]
 
-[ext_resource path="res://Util/fps_label.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Player/Player.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Clock/clock.png" type="Texture" id=3]
-[ext_resource path="res://Assets/melly/Melly.png" type="Texture" id=4]
-[ext_resource path="res://TileSet/test.tres" type="TileSet" id=5]
-[ext_resource path="res://Util/spike1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Clock/clock.png" type="Texture" id=1]
+[ext_resource path="res://Assets/melly/Melly.png" type="Texture" id=2]
+[ext_resource path="res://TileSet/test.tres" type="TileSet" id=17]
+[ext_resource path="res://Player/Player.gd" type="Script" id=18]
+[ext_resource path="res://Util/fps_label.tscn" type="PackedScene" id=19]
 
 [sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 16, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 32, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 48, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 64, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 80, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 96, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 112, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=9]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 128, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=10]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 144, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=11]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 160, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 3 )
+atlas = ExtResource( 1 )
 region = Rect2( 176, 0, 16, 16 )
 
 [sub_resource type="SpriteFrames" id=13]
@@ -67,35 +66,35 @@ animations = [ {
 extents = Vector2( 16, 16 )
 
 [sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 64, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=18]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 80, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=19]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=20]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 16, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=21]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 32, 0, 16, 16 )
 
 [sub_resource type="AtlasTexture" id=22]
-atlas = ExtResource( 4 )
+atlas = ExtResource( 2 )
 region = Rect2( 48, 0, 16, 16 )
 
 [sub_resource type="SpriteFrames" id=23]
@@ -128,16 +127,16 @@ points = PoolVector2Array( 8, 20, 8, 48, 32, 60, 54, 48, 54, 20 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
-tile_set = ExtResource( 5 )
+tile_set = ExtResource( 17 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 524303, 0, 0, 524304, 1, 0, 524305, 1, 0, 524306, 1, 0, 524307, 1, 0, 524308, 2, 0, 655359, 23, 0, 589839, 3, 0, 589840, 4, 0, 589841, 4, 0, 589842, 4, 0, 589843, 4, 0, 589844, 5, 0, 720895, 23, 0, 655375, 3, 0, 655376, 4, 0, 655377, 4, 0, 655378, 4, 0, 655379, 4, 0, 655380, 5, 0, 655393, 23, 0, 786431, 23, 0, 720911, 3, 0, 720912, 4, 0, 720913, 4, 0, 720914, 4, 0, 720915, 4, 0, 720916, 5, 0, 720929, 23, 0, 851967, 23, 0, 786447, 6, 0, 786448, 7, 0, 786449, 7, 0, 786450, 7, 0, 786451, 7, 0, 786452, 8, 0, 786465, 23, 0, 851968, 20, 0, 851969, 20, 0, 851970, 20, 0, 851971, 23, 0, 851972, 23, 0, 851973, 21, 0, 851984, 12, 0, 851986, 15, 0, 851997, 30, 0, 851998, 28, 0, 852001, 23, 0, 917504, 23, 0, 917505, 23, 0, 917506, 23, 0, 917507, 23, 0, 917508, 23, 0, 917509, 24, 0, 917520, 12, 0, 917522, 15, 0, 917536, 28, 0, 917537, 23, 0, 983040, 23, 0, 983041, 23, 0, 983042, 23, 0, 983043, 23, 0, 983044, 23, 0, 983045, 24, 0, 983046, 36, 0, 983047, 37, 0, 983056, 9, 0, 983057, 10, 0, 983058, 11, 0, 983062, 16, 0, 983065, 16, 0, 983070, 30, 0, 983071, 28, 0, 983073, 23, 0, 1048576, 23, 0, 1048577, 23, 0, 1048578, 23, 0, 1048579, 23, 0, 1048580, 23, 0, 1048581, 24, 0, 1048587, 34, 0, 1048588, 36, 0, 1048589, 37, 0, 1048603, 19, 0, 1048604, 20, 0, 1048605, 21, 0, 1114112, 23, 0, 1114113, 23, 0, 1114114, 23, 0, 1114115, 23, 0, 1114116, 23, 0, 1114117, 24, 0, 1114139, 25, 0, 1114140, 26, 0, 1114141, 27, 0, 1179648, 23, 0, 1179649, 23, 0, 1179650, 23, 0, 1179651, 23, 0, 1179652, 23, 0, 1179653, 24, 0 )
+tile_data = PoolIntArray( 4, 12, 0, 5, 15, 0, 26, 12, 0, 29, 15, 0, 65540, 12, 0, 65541, 15, 0, 65562, 12, 0, 65565, 15, 0, 131076, 12, 0, 131077, 15, 0, 131098, 12, 0, 131101, 15, 0, 196612, 12, 0, 196613, 15, 0, 196634, 12, 0, 196637, 15, 0, 262148, 12, 0, 262149, 15, 0, 262170, 12, 0, 262173, 15, 0, 327684, 12, 0, 327685, 15, 0, 327706, 12, 0, 327709, 15, 0, 393220, 9, 0, 393221, 11, 0, 393229, 16, 0, 393242, 12, 0, 393245, 15, 0, 458763, 16, 0, 458778, 12, 0, 458781, 15, 0, 524300, 30, 0, 524301, 28, 0, 524314, 12, 0, 524317, 15, 0, 589840, 19, 0, 589841, 21, 0, 589850, 12, 0, 589853, 15, 0, 655376, 25, 0, 655377, 27, 0, 655380, 19, 0, 655381, 21, 0, 655386, 12, 0, 655389, 15, 0, 655393, 4, 0, 720916, 25, 0, 720917, 27, 0, 720920, 23, 0, 720922, 12, 0, 720925, 15, 0, 720929, 4, 0, 786458, 9, 0, 786459, 10, 0, 786460, 10, 0, 786461, 11, 0, 786465, 4, 0, 852000, 34, 0, 852001, 4, 0, 917524, 0, 0, 917525, 2, 0, 917535, 34, 0, 917536, 35, 0, 917537, 4, 0, 983050, 31, 0, 983057, 31, 0, 983060, 3, 0, 983061, 5, 0, 1048586, 33, 0, 1048590, 31, 0, 1048593, 33, 0, 1048596, 3, 0, 1048597, 5, 0, 1048601, 31, 0, 1048604, 31, 0, 1048606, 39, 0, 1114122, 33, 0, 1114126, 33, 0, 1114129, 33, 0, 1114132, 3, 0, 1114133, 5, 0, 1114137, 39, 0, 1114140, 39, 0, 1114142, 39, 0, 1179658, 33, 0, 1179662, 33, 0, 1179665, 33, 0, 1179668, 3, 0, 1179669, 5, 0, 1179673, 39, 0, 1179676, 39, 0, 1179678, 39, 0 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Clock" type="Area2D" parent="."]
-position = Vector2( 946.073, 403.615 )
+position = Vector2( 433.861, 181.44 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -145,22 +144,22 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Clock"]
 scale = Vector2( 2, 2 )
 frames = SubResource( 13 )
-frame = 6
+frame = 7
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clock"]
 shape = SubResource( 14 )
 
-[node name="fps_label" parent="." instance=ExtResource( 1 )]
+[node name="fps_label" parent="." instance=ExtResource( 19 )]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 56.8435, 375.37 )
+position = Vector2( 158.253, 158.477 )
 scale = Vector2( -0.5, 0.5 )
-script = ExtResource( 2 )
+script = ExtResource( 18 )
 __meta__ = {
 "_edit_group_": true
 }
-level = "res://Levels/6.tscn"
+level = "res://Levels/8.tscn"
 
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
 position = Vector2( -3, 0 )
@@ -175,20 +174,4 @@ position = Vector2( -36, -32 )
 shape = SubResource( 24 )
 
 [node name="OnScreen" type="VisibilityNotifier2D" parent="Player"]
-
-[node name="Area2D" parent="." instance=ExtResource( 6 )]
-position = Vector2( 175.096, 398.289 )
-
-[node name="Area2D2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 560.915, 480.864 )
-
-[node name="Area2D3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 910.45, 494.171 )
-
-[node name="Area2D4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 948.43, 359.084 )
 [connection signal="body_entered" from="Clock" to="Player" method="_on_Clock_body_entered"]
-[connection signal="body_entered" from="Area2D" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="Area2D3" to="Player" method="_on_spike_body_entered"]
-[connection signal="body_entered" from="Area2D4" to="Player" method="_on_spike_body_entered"]

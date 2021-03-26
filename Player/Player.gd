@@ -65,3 +65,16 @@ func _on_Clock_body_entered(body):
 	get_tree().change_scene(level)	
 	pass
 
+
+
+func _on_spike_body_entered(body):
+	if body.get_name() == "Player":
+		get_tree().reload_current_scene()	
+	pass
+func _on_bullet_body_entered(body, sender):
+	if body.get_name() == "Player":
+		get_tree().reload_current_scene()
+	get_node("../" + sender).queue_free()
+
+
+
